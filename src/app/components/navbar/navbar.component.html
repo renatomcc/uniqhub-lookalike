@@ -5,12 +5,16 @@
         <img src="../../../assets/logo-image.png" alt="UNIQ" />
       </a>
     </div>
-    <div class="navbar-links">
+    <div class="menu" (click)="handleMenu()">
+      <fa-icon [icon]="mobile ? menuClose : menuOpen" />
+    </div>
+
+    <div class="navbar-links" [class.isOpen]="mobile">
       <ul>
-        <li><a routerLink="/quem-somos">Quem somos</a></li>
-        <li><a routerLink="/solucoes">Soluções</a></li>
-        <li><a routerLink="/perguntas-frequentes">Perguntas Frequentes</a></li>
-        <li><a routerLink="/nossos-clientes">Nossos Clientes</a></li>
+        <a routerLink="/quem-somos"><li>Quem somos</li></a>
+        <a routerLink="/solucoes"><li>Soluções</li></a>
+        <a routerLink="/perguntas-frequentes"><li>Perguntas Frequentes</li></a>
+        <a routerLink="/nossos-clientes"><li>Nossos Clientes</li></a>
       </ul>
     </div>
   </div>
