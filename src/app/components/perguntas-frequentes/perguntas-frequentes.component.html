@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Perguntas Frequentes</h1>
+  <div class="questions">
+    <div class="question" *ngFor="let question of questions">
+      <h4>{{ question.question }}</h4>
+      <span>{{ question.answer }} </span>
+    </div>
+  </div>
+  <button>Agende uma Demonstração!</button>
+</div>
