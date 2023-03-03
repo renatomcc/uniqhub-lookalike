@@ -3,7 +3,7 @@ nav
     height: 80px
     position: fixed
     left: 0
-    background-color: #093874
+    backdrop-filter: blur(10px)
     display: flex
     justify-content: center
 
@@ -18,12 +18,13 @@ nav
      ul
         display: flex
         list-style: none
-        gap: 15px
+        gap: 35px
         li
             cursor: pointer
             a
+                text-decoration: none
                 color: white
-                font-size: 18px
+                font-size: 22px
                 transition: all ease-in-out 0.2s
                 &:hover
                     color: #dd801d
