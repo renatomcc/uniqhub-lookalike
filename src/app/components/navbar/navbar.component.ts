@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.sass'],
 })
 export class NavbarComponent {
-  constructor() {}
-  ngOnInit(): void {}
 }

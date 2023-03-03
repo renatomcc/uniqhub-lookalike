@@ -20,8 +20,7 @@
     img
         width: 40%
     p
-        width: 60% 
-
+        width: 60%
 
 .attributes
     width: 100%
@@ -46,3 +45,26 @@
     img
         padding: 5px
         width: 80%
+
+@media (max-width: 1000px)
+    .container
+        p
+            width: 80%
+    .introduction
+        flex-direction: column
+        padding: 20px 5px
+        img
+            width: 100%
+        p
+            width: 80%
+
+    .attributes
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        gap: 50px
+        justify-content: center
+
+    .attribute
+        padding: 0px 25px
+        gap: 5px
