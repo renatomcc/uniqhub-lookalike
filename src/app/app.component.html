@@ -2,12 +2,9 @@
   <div class="container">
     <app-navbar/>
     <div class="header">
-      <img src="../../assets/header-image.png"/>
+      <!-- <img src="../../assets/header-image.png"/> -->
     </div>
-    <div class="content-container">
-      <app-quem-somos/>
-      <app-clientes/>
-    </div>
+    <router-outlet></router-outlet>
     <footer>
       <div class="footer-content">
         <div class="links">
@@ -38,6 +35,7 @@
           <img src="../../assets/work-with-us.png" alt="Trabalhe Conosco"/>
         </div>
       </div>
+      <app-scroll-button/>
     </footer>
   </div>
 </main>
